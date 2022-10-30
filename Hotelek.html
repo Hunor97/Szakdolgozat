@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+ <link rel="stylesheet" href="menu.css" type="text/css">
+ <title>Szállások</title>
+</head>
+
+   <body background="hatterkep.jpg">
+    <img style="box-shadow: 0px 0px 20px black;" src="budapest.jpg" align="left" width="380" height="70" >
+<table align="right">
+   
+  <tr id="fejlec">
+   <th>
+    <ul id="menu">
+	    <li><a href="Kezdolap.html">Kezdőlap</a></li>
+		<li><a href="Latvanyossagok.html">Látványosságok</a></li>
+		<li><a href="Hidak.html">Hidak</a></li>
+		<li><a href="Szallasok.php">Szállások</a></li>
+		<li><a href="Tudnivalok.html">Tudnivalók</a></li>
+		<li><a href="Foglalasaim.php">Foglalásaim</a></li>
+	</ul>
+   </th>
+  </tr>
+</table>
+<center><br><br><br><br><br>
+<div id="keret">
+<form action="hozzaadas.php" method="post">
+<h2>Szoba foglalása</h2>
+Név: <input type="text" name="nev" value=""></input><br><br>
+Érkezés dátuma: <input type="text" name="mettol" value=""></input><br><br>
+Távozás dátuma: <input type="text" name="meddig" value=""></input><br><br>
+
+Személyek száma: <label for="szam">
+<select name="szam">
+<option value="egy" selected>Egy</option>
+<option value="ketto" >Kettő</option>
+<option value="harom" >Három</option>
+<option value="negy" >Négy</option>
+<option value="ot" >Öt</option>
+</select>
+</label><br><br>
+
+<b>Szoba típusa:</b><br>
+<label for="egy">Egy ágyas:
+<input type="radio" name="agyak" value="egy" checked></label>
+<label for="ketto">Kétágyas:
+<input type="radio" name="agyak" value="ketto"></label>
+<br>
+<label for="ketto">Három ágyas:
+<input type="radio" name="agyak" value="harom"></label>
+<label for="ketto">Négy ágyas:
+<input type="radio" name="agyak" value="negy"></label><br>
+<br>
+
+Étkezés: <label for="etel">
+<select name="etel">
+<option value="reggeli" selected>Csak reggeli</option>
+<option value="3 etkezes" >Reggeli,ebed,vacsora</option>
+<option value="reggeli es vacsora" >Reggeli es vacsora</option>
+<option value="all inclusiv" >All inclusiv</option>
+</select>
+</label><br><br>
+
+Hotel: <label for="hotel">
+<select name="hotel">
+<option value="Alfa Art" selected>Alfa Art</option>
+<option value="Art hotel budapest" >Art hotel budapest</option>
+<option value="Best Western Orion" >Best Western Orion</option>
+<option value="Carlton Budapest" >Carlton Budapest</option>
+<option value="Csaszar" >Csaszar</option>
+<option value="Hilton Budapest" >Hilton Budapest</option>
+<option value="Prestige Budapest">Prestige Budapest</option>
+<option value="Victoria Budapest" >Victoria Budapest</option>
+<option value="Aquaworld Resort" >Aquaworld Resort</option>
+<option value="Vitta Hotel Superior" >Vitta Hotel Superior</option>
+<option value="City Hotel Matyas" >City Hotel Matyas</option>
+<option value="Medosz Hotel" >Medosz Hotel</option>
+</select>
+</label><br><br>
+<input type="submit" name="gomb" value="Foglalás!" id="gomb"></input>
+</form></div>
+<br>
+<form action="Szallasok.php" method="POST">
+ <input type="submit" name="go" value="Szállások" id="gomb">
+ </form>
+</center>
+</body>
+</html>

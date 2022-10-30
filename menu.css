@@ -1,0 +1,76 @@
+#menu{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	list-style: none;
+   padding: 0;
+   margin: 0;
+   float: left;
+   background: #4286f4;
+   text-shadow: 2px 2px 5px black;
+   box-shadow: 2px 2px 5px black;
+}
+#menu li{
+	 float: left;
+	 text-align: center;
+}
+#menu li a{
+	padding: 10px 20px;
+	display:block;
+	text-decoration: none;
+	color: white;
+}
+#menu li a:hover{
+	background: #246ce2;
+	color: white;
+}
+#fejlec th{
+	background: black;
+	
+}
+#tablazat{
+   background-color:rgba(255, 255, 255, 0.7);
+   color: black;
+   font-family: arial;
+   font-size: 25px;
+}
+#tablazat input{
+	font-size: 20px;
+	width: 75px;
+}
+#card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+#szin:link{
+	color: white;
+	text-decoration: none;
+	text-shadow: 1px 1px black;
+}
+#szin:visited{
+	color: white;
+	text-shadow: 1px 1px black;
+}
+#szin:hover{
+	color: red;
+	text-shadow: 1px 1px black;
+}
+#gomb{
+	font-weight: bold;
+	font-family:roboto;
+	font-size:17px;
+	width:120px;
+	height:35px;
+	border-width: 0px;
+	box-shadow: 0px 0px 5px black;
+}
+#gomb:hover{
+	color: blue;
+}
+#keret {
+    border-radius: 15px 50px;
+    background-color:rgba(216, 241, 255, 0.8) ;
+	padding: 40px;
+    width: 300px;
+    height: 450px; 
+}
